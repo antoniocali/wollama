@@ -1,0 +1,20 @@
+# OS / editor noise
+.DS_Store
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Dependency / build dirs (keep in case you add tooling later)
+node_modules/
+dist/
+build/
+
+# (Optional) Python leftovers — safe to keep even though the repo is static-only
+__pycache__/
+.venv/

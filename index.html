@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Which Local Model?</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="wm-header">
+      <div class="wm-header-inner">
+        <h1>Which local model should I run?</h1>
+        <p class="wm-subtitle">
+          Community-maintained recommendations for running Ollama models locally,
+          tailored to your hardware.
+        </p>
+      </div>
+    </header>
+
+    <main class="wm-main">
+      <section class="wm-card">
+        <h2>Your machine</h2>
+        <div id="hardware-detected" class="wm-hardware">
+          <p>Detecting your hardware capabilities in the browser…</p>
+        </div>
+      </section>
+
+      <section class="wm-card">
+        <div class="wm-card-header">
+          <h2>Find the best model</h2>
+          <div class="wm-search-row">
+            <input
+              id="search-input"
+              type="search"
+              placeholder="Search by device (e.g. 'M1 Pro', 'RTX 3060', '16GB RAM') or model name…"
+            />
+            <select id="purpose-select">
+              <option value="">Any purpose</option>
+              <option value="general">General chat</option>
+              <option value="coding">Coding</option>
+            </select>
+            <select id="tools-select">
+              <option value="">Tools or no tools</option>
+              <option value="true">Requires tools</option>
+              <option value="false">No tools</option>
+            </select>
+          </div>
+        </div>
+        <div id="results-summary" class="wm-results-summary"></div>
+        <div id="models-list" class="wm-models-list"></div>
+      </section>
+
+      <section class="wm-card wm-card-secondary">
+        <h2>How this works</h2>
+        <p>
+          This project is a simple JSON-backed directory
+          of Ollama models that people have successfully run on their local hardware.
+          GitHub Pages hosts the site; contributions are made via pull requests editing
+          <code>models.json</code>.
+        </p>
+        <p>
+          Detected hardware is best-effort: the browser exposes only limited information.
+          You can always override using the search bar to filter by GPU/CPU, RAM, or device name.
+        </p>
+        <p>
+          Want to contribute? Add or tweak entries in <code>models.json</code> describing:
+          the model, purpose, whether tools are supported, and the hardware it runs well on.
+        </p>
+      </section>
+    </main>
+
+    <footer class="wm-footer">
+      <p>
+        Built with ❤️. Contribute on GitHub:
+        <a
+          id="repo-link"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >repository link</a>
+      </p>
+      <p>
+        Author:
+        <a
+          href="https://github.com/antoniocali"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Antonio Davide Cali</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

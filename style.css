@@ -1,0 +1,257 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top left, #0f172a, #020617 45%, #000);
+  color: #e5e7eb;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wm-header {
+  padding: 2.5rem 1.5rem 1.5rem;
+}
+
+.wm-header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.wm-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.9rem, 2.8vw + 1rem, 2.6rem);
+  letter-spacing: -0.03em;
+}
+
+.wm-subtitle {
+  margin: 0;
+  color: #9ca3af;
+  max-width: 42rem;
+}
+
+.wm-main {
+  flex: 1;
+  padding: 0 1.5rem 2.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.wm-card {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(2, 6, 23, 0.98));
+  border-radius: 1.25rem;
+  padding: 1.5rem 1.7rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(22px);
+}
+
+.wm-card-secondary {
+  background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.98));
+}
+
+.wm-card h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+}
+
+.wm-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+.wm-search-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+input[type="search"],
+select {
+  border-radius: 0.7rem;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(15, 23, 42, 0.9);
+  color: #e5e7eb;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.9rem;
+  outline: none;
+  min-width: 0;
+}
+
+input[type="search"]::placeholder {
+  color: #6b7280;
+}
+
+input[type="search"]:focus,
+select:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.5);
+}
+
+#search-input {
+  flex: 1.4;
+  min-width: 13rem;
+}
+
+#purpose-select,
+#tools-select {
+  flex: 0.6;
+  min-width: 8rem;
+}
+
+.wm-hardware {
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+.wm-hardware-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.55rem 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.wm-hardware-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+}
+
+.wm-hardware-value {
+  font-size: 0.95rem;
+}
+
+.wm-results-summary {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-bottom: 0.4rem;
+}
+
+.wm-models-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.wm-model {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.3fr);
+  gap: 0.7rem 1.2rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.9rem;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(31, 41, 55, 0.9);
+}
+
+.wm-model-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+}
+
+.wm-model-name {
+  font-weight: 600;
+}
+
+.wm-model-tagline {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.wm-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.wm-chip {
+  font-size: 0.75rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  color: #e5e7eb;
+}
+
+.wm-chip.purpose-general {
+  border-color: rgba(52, 211, 153, 0.7);
+  background: rgba(6, 95, 70, 0.4);
+}
+
+.wm-chip.purpose-coding {
+  border-color: rgba(56, 189, 248, 0.7);
+  background: rgba(12, 74, 110, 0.5);
+}
+
+.wm-chip.tools-yes {
+  border-color: rgba(245, 158, 11, 0.7);
+  background: rgba(120, 53, 15, 0.5);
+}
+
+.wm-chip.tools-no {
+  border-color: rgba(148, 163, 184, 0.7);
+  background: rgba(31, 41, 55, 0.7);
+}
+
+.wm-chip.recommended {
+  border-color: rgba(129, 140, 248, 0.7);
+  background: rgba(30, 64, 175, 0.6);
+}
+
+.wm-model-meta {
+  font-size: 0.82rem;
+  color: #9ca3af;
+}
+
+.wm-small-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #6b7280;
+}
+
+.wm-meta-line {
+  margin-top: 0.1rem;
+}
+
+.wm-footer {
+  padding: 1rem 1.5rem 2rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+.wm-footer a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+.wm-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+  .wm-card {
+    padding: 1.2rem 1.2rem;
+  }
+
+  .wm-model {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+

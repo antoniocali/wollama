@@ -1,0 +1,74 @@
+[
+  {
+    "id": "llama3.1-8b-general-m1pro",
+    "model_name": "llama3.1:8b",
+    "display_name": "Llama 3.1 8B",
+    "provider": "Ollama",
+    "purpose": "general",
+    "supports_tools": false,
+    "recommended_for": [
+      "Apple M1 Pro",
+      "Apple M2 Pro",
+      "Apple M3",
+      "16GB RAM"
+    ],
+    "hardware_profile": {
+      "min_vram_gb": 8,
+      "min_ram_gb": 16,
+      "min_cores": 8,
+      "arch": "arm64"
+    },
+    "notes": "Good default general assistant for Apple Silicon laptops; fits in 16GB unified memory. Use quantized variant if you experience swapping.",
+    "links": {
+      "ollama": "https://ollama.com/library/llama3.1"
+    }
+  },
+  {
+    "id": "llama3.1-8b-code-m1pro",
+    "model_name": "llama3.1:8b-code",
+    "display_name": "Llama 3.1 8B Code",
+    "provider": "Ollama",
+    "purpose": "coding",
+    "supports_tools": false,
+    "recommended_for": [
+      "Apple M1 Pro",
+      "Apple M2 Pro",
+      "Apple M3 Pro",
+      "32GB RAM"
+    ],
+    "hardware_profile": {
+      "min_vram_gb": 10,
+      "min_ram_gb": 24,
+      "min_cores": 8,
+      "arch": "arm64"
+    },
+    "notes": "Coding-specialized variant, better at code completion and explanation than the general model.",
+    "links": {
+      "ollama": "https://ollama.com/library/llama3.1"
+    }
+  },
+  {
+    "id": "phi4-tools-rtx3060",
+    "model_name": "phi4:14b",
+    "display_name": "Phi-4 14B Tools",
+    "provider": "Ollama",
+    "purpose": "general",
+    "supports_tools": true,
+    "recommended_for": [
+      "NVIDIA RTX 3060 12GB",
+      "NVIDIA RTX 3070",
+      "32GB RAM desktop"
+    ],
+    "hardware_profile": {
+      "min_vram_gb": 12,
+      "min_ram_gb": 24,
+      "min_cores": 8,
+      "arch": "x86_64"
+    },
+    "notes": "Good balance of reasoning quality and latency on mid-range NVIDIA GPUs. Tools assume your client/runtime can call external APIs.",
+    "links": {
+      "ollama": "https://ollama.com/library/phi4"
+    }
+  }
+]
+
