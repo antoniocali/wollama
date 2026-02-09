@@ -24,6 +24,8 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       # No build step needed; this is a static site at the repo root
 
