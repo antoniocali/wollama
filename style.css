@@ -29,6 +29,27 @@ body {
   margin: 0 auto;
 }
 
+.wm-header-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.wm-logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.7);
+  flex-shrink: 0;
+}
+
+.wm-header-text {
+  display: flex;
+  flex-direction: column;
+}
+
 .wm-header h1 {
   margin: 0 0 0.5rem;
   font-size: clamp(1.9rem, 2.8vw + 1rem, 2.6rem);
@@ -246,6 +267,10 @@ select:focus {
 }
 
 @media (max-width: 720px) {
+  .wm-header-top {
+    align-items: flex-start;
+  }
+
   .wm-card {
     padding: 1.2rem 1.2rem;
   }
