@@ -35,6 +35,27 @@ to recommend the best Ollama models for different hardware setups.
    - Latency/throughput experience.
    - Any caveats (swapping, overheating, batch size limits, etc.).
 
+### Adding yourself as a contributor
+
+Contributors are displayed on the homepage from `contributors.json`.
+
+1. Add an entry to `contributors.json`, following this structure:
+
+   ```json
+   [
+     {
+       "name": "Your Name",
+       "github": "your-github-handle"
+     }
+   ]
+   ```
+
+   - **name**: how you’d like to be shown.
+   - **github**: your GitHub username (used to build a `https://github.com/<github>` link and show `@handle` in the UI).
+
+2. If there are already entries, just append yours to the array.
+3. Open a pull request; once merged and deployed, you’ll appear in the **Contributors** section.
+
 ### GitHub Pages / CI
 
 This repository is configured with a simple GitHub Actions workflow in
