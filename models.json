@@ -69,6 +69,328 @@
     "links": {
       "ollama": "https://ollama.com/library/phi4"
     }
+  },
+  {
+    "id": "llama3.2-3b-general-m1",
+    "model_name": "llama3.2:3b",
+    "display_name": "Llama 3.2 3B",
+    "provider": "Ollama",
+    "purpose": "general",
+    "supports_tools": false,
+    "recommended_for": [
+      "Apple M1",
+      "Apple M1 Air",
+      "8GB RAM Mac"
+    ],
+    "hardware_profile": {
+      "min_vram_gb": 4,
+      "min_ram_gb": 8,
+      "min_cores": 4,
+      "arch": "arm64"
+    },
+    "notes": "Lightweight model ideal for low-end Apple Silicon. Fast responses with decent quality for simple tasks.",
+    "links": {
+      "ollama": "https://ollama.com/library/llama3.2"
+    }
+  },
+  {
+    "id": "llama3.2-3b-general-intel",
+    "model_name": "llama3.2:3b",
+    "display_name": "Llama 3.2 3B",
+    "provider": "Ollama",
+    "purpose": "general",
+    "supports_tools": false,
+    "recommended_for": [
+      "Intel i5 with 8GB RAM",
+      "Low-end desktop",
+      "8GB RAM laptop"
+    ],
+    "hardware_profile": {
+      "min_vram_gb": 4,
+      "min_ram_gb": 8,
+      "min_cores": 4,
+      "arch": "x86_64"
+    },
+    "notes": "Lightweight model ideal for low-end x86 hardware. Fast responses with decent quality for simple tasks.",
+    "links": {
+      "ollama": "https://ollama.com/library/llama3.2"
+    }
+  },
+  {
+    "id": "mistral-7b-general-m1pro",
+    "model_name": "mistral:7b",
+    "display_name": "Mistral 7B",
+    "provider": "Ollama",
+    "purpose": "general",
+    "supports_tools": false,
+    "recommended_for": [
+      "Apple M1 Pro",
+      "Apple M2",
+      "16GB RAM Mac"
+    ],
+    "hardware_profile": {
+      "min_vram_gb": 6,
+      "min_ram_gb": 16,
+      "min_cores": 6,
+      "arch": "arm64"
+    },
+    "notes": "Fast inference with good quality on Apple Silicon. Excellent for general conversation and reasoning tasks.",
+    "links": {
+      "ollama": "https://ollama.com/library/mistral"
+    }
+  },
+  {
+    "id": "mistral-7b-general-gtx1080",
+    "model_name": "mistral:7b",
+    "display_name": "Mistral 7B",
+    "provider": "Ollama",
+    "purpose": "general",
+    "supports_tools": false,
+    "recommended_for": [
+      "NVIDIA GTX 1080",
+      "NVIDIA GTX 1070",
+      "16GB RAM desktop"
+    ],
+    "hardware_profile": {
+      "min_vram_gb": 6,
+      "min_ram_gb": 16,
+      "min_cores": 6,
+      "arch": "x86_64"
+    },
+    "notes": "Fast inference with good quality on NVIDIA GPUs. Excellent for general conversation and reasoning tasks.",
+    "links": {
+      "ollama": "https://ollama.com/library/mistral"
+    }
+  },
+  {
+    "id": "qwen2.5-7b-general-m1pro",
+    "model_name": "qwen2.5:7b",
+    "display_name": "Qwen 2.5 7B",
+    "provider": "Ollama",
+    "purpose": "general",
+    "supports_tools": true,
+    "recommended_for": [
+      "Apple M1 Pro",
+      "Apple M2 Pro",
+      "16GB RAM Mac"
+    ],
+    "hardware_profile": {
+      "min_vram_gb": 6,
+      "min_ram_gb": 16,
+      "min_cores": 6,
+      "arch": "arm64"
+    },
+    "notes": "Strong multilingual support on Apple Silicon. Excellent at reasoning and following instructions. Supports tool calling.",
+    "links": {
+      "ollama": "https://ollama.com/library/qwen2.5"
+    }
+  },
+  {
+    "id": "qwen2.5-7b-general-rtx3060",
+    "model_name": "qwen2.5:7b",
+    "display_name": "Qwen 2.5 7B",
+    "provider": "Ollama",
+    "purpose": "general",
+    "supports_tools": true,
+    "recommended_for": [
+      "NVIDIA RTX 3060",
+      "NVIDIA RTX 3050",
+      "16GB RAM desktop"
+    ],
+    "hardware_profile": {
+      "min_vram_gb": 6,
+      "min_ram_gb": 16,
+      "min_cores": 6,
+      "arch": "x86_64"
+    },
+    "notes": "Strong multilingual support on NVIDIA GPUs. Excellent at reasoning and following instructions. Supports tool calling.",
+    "links": {
+      "ollama": "https://ollama.com/library/qwen2.5"
+    }
+  },
+  {
+    "id": "qwen2.5-coder-7b-m1pro",
+    "model_name": "qwen2.5-coder:7b",
+    "display_name": "Qwen 2.5 Coder 7B",
+    "provider": "Ollama",
+    "purpose": "coding",
+    "supports_tools": false,
+    "recommended_for": [
+      "Apple M1 Pro",
+      "Apple M2 Pro",
+      "16GB RAM Mac"
+    ],
+    "hardware_profile": {
+      "min_vram_gb": 6,
+      "min_ram_gb": 16,
+      "min_cores": 6,
+      "arch": "arm64"
+    },
+    "notes": "Alibaba's coding-focused model on Apple Silicon. Strong at code completion, explanation, and debugging.",
+    "links": {
+      "ollama": "https://ollama.com/library/qwen2.5-coder"
+    }
+  },
+  {
+    "id": "qwen2.5-coder-7b-rtx3060",
+    "model_name": "qwen2.5-coder:7b",
+    "display_name": "Qwen 2.5 Coder 7B",
+    "provider": "Ollama",
+    "purpose": "coding",
+    "supports_tools": false,
+    "recommended_for": [
+      "NVIDIA RTX 3060",
+      "NVIDIA RTX 3050",
+      "16GB RAM desktop"
+    ],
+    "hardware_profile": {
+      "min_vram_gb": 6,
+      "min_ram_gb": 16,
+      "min_cores": 6,
+      "arch": "x86_64"
+    },
+    "notes": "Alibaba's coding-focused model on NVIDIA GPUs. Strong at code completion, explanation, and debugging.",
+    "links": {
+      "ollama": "https://ollama.com/library/qwen2.5-coder"
+    }
+  },
+  {
+    "id": "deepseek-coder-v2-16b-m2pro",
+    "model_name": "deepseek-coder-v2:16b",
+    "display_name": "DeepSeek Coder V2 16B",
+    "provider": "Ollama",
+    "purpose": "coding",
+    "supports_tools": false,
+    "recommended_for": [
+      "Apple M2 Pro 32GB",
+      "Apple M3 Pro",
+      "32GB RAM Mac"
+    ],
+    "hardware_profile": {
+      "min_vram_gb": 12,
+      "min_ram_gb": 32,
+      "min_cores": 8,
+      "arch": "arm64"
+    },
+    "notes": "Excellent code generation quality on Apple Silicon. Best for complex programming tasks requiring deeper reasoning.",
+    "links": {
+      "ollama": "https://ollama.com/library/deepseek-coder-v2"
+    }
+  },
+  {
+    "id": "deepseek-coder-v2-16b-rtx3080",
+    "model_name": "deepseek-coder-v2:16b",
+    "display_name": "DeepSeek Coder V2 16B",
+    "provider": "Ollama",
+    "purpose": "coding",
+    "supports_tools": false,
+    "recommended_for": [
+      "NVIDIA RTX 3080",
+      "NVIDIA RTX 4070",
+      "32GB RAM desktop"
+    ],
+    "hardware_profile": {
+      "min_vram_gb": 12,
+      "min_ram_gb": 32,
+      "min_cores": 8,
+      "arch": "x86_64"
+    },
+    "notes": "Excellent code generation quality on NVIDIA GPUs. Best for complex programming tasks requiring deeper reasoning.",
+    "links": {
+      "ollama": "https://ollama.com/library/deepseek-coder-v2"
+    }
+  },
+  {
+    "id": "gemma2-9b-general-m1pro",
+    "model_name": "gemma2:9b",
+    "display_name": "Gemma 2 9B",
+    "provider": "Ollama",
+    "purpose": "general",
+    "supports_tools": false,
+    "recommended_for": [
+      "Apple M1 Pro",
+      "Apple M2",
+      "16GB RAM Mac"
+    ],
+    "hardware_profile": {
+      "min_vram_gb": 8,
+      "min_ram_gb": 16,
+      "min_cores": 6,
+      "arch": "arm64"
+    },
+    "notes": "Google's efficient model on Apple Silicon. Good balance of quality and speed for general tasks.",
+    "links": {
+      "ollama": "https://ollama.com/library/gemma2"
+    }
+  },
+  {
+    "id": "gemma2-9b-general-rtx3060",
+    "model_name": "gemma2:9b",
+    "display_name": "Gemma 2 9B",
+    "provider": "Ollama",
+    "purpose": "general",
+    "supports_tools": false,
+    "recommended_for": [
+      "NVIDIA RTX 3060",
+      "NVIDIA RTX 3050 8GB",
+      "16GB RAM desktop"
+    ],
+    "hardware_profile": {
+      "min_vram_gb": 8,
+      "min_ram_gb": 16,
+      "min_cores": 6,
+      "arch": "x86_64"
+    },
+    "notes": "Google's efficient model on NVIDIA GPUs. Good balance of quality and speed for general tasks.",
+    "links": {
+      "ollama": "https://ollama.com/library/gemma2"
+    }
+  },
+  {
+    "id": "codellama-13b-m2pro",
+    "model_name": "codellama:13b",
+    "display_name": "Code Llama 13B",
+    "provider": "Ollama",
+    "purpose": "coding",
+    "supports_tools": false,
+    "recommended_for": [
+      "Apple M2 Pro",
+      "Apple M3",
+      "24GB RAM Mac"
+    ],
+    "hardware_profile": {
+      "min_vram_gb": 10,
+      "min_ram_gb": 24,
+      "min_cores": 8,
+      "arch": "arm64"
+    },
+    "notes": "Meta's dedicated code model on Apple Silicon. Strong at code infilling, completion, and instruction following.",
+    "links": {
+      "ollama": "https://ollama.com/library/codellama"
+    }
+  },
+  {
+    "id": "codellama-13b-rtx3070",
+    "model_name": "codellama:13b",
+    "display_name": "Code Llama 13B",
+    "provider": "Ollama",
+    "purpose": "coding",
+    "supports_tools": false,
+    "recommended_for": [
+      "NVIDIA RTX 3070",
+      "NVIDIA RTX 4060",
+      "24GB RAM desktop"
+    ],
+    "hardware_profile": {
+      "min_vram_gb": 10,
+      "min_ram_gb": 24,
+      "min_cores": 8,
+      "arch": "x86_64"
+    },
+    "notes": "Meta's dedicated code model on NVIDIA GPUs. Strong at code infilling, completion, and instruction following.",
+    "links": {
+      "ollama": "https://ollama.com/library/codellama"
+    }
   }
 ]
 
