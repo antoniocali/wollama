@@ -62,6 +62,30 @@ body {
   max-width: 42rem;
 }
 
+.wm-contrib-callout {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: #e5e7eb;
+  max-width: 42rem;
+}
+
+.wm-subtitle,
+.wm-contrib-callout {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wm-contrib-callout a {
+  color: #bfdbfe;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(191, 219, 254, 0.5);
+}
+
+.wm-contrib-callout a:hover {
+  color: #e5e7eb;
+  border-bottom-color: rgba(229, 231, 235, 0.9);
+}
+
 .wm-main {
   flex: 1;
   padding: 0 1.5rem 2.5rem;
@@ -258,11 +282,43 @@ select:focus {
 }
 
 .wm-footer a {
-  color: #93c5fd;
+  color: #bfdbfe;
   text-decoration: none;
 }
 
 .wm-footer a:hover {
+  color: #e5e7eb;
+  text-decoration: underline;
+}
+
+.wm-contrib-intro {
+  font-size: 0.9rem;
+  color: #d1d5db;
+  margin-bottom: 0.75rem;
+}
+
+.wm-contributors-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.wm-contributor {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  font-size: 0.85rem;
+  color: #e5e7eb;
+  background: rgba(15, 23, 42, 0.9);
+}
+
+.wm-contributor a {
+  color: #bfdbfe;
+  text-decoration: none;
+}
+
+.wm-contributor a:hover {
+  color: #e5e7eb;
   text-decoration: underline;
 }
 
